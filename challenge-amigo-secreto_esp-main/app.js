@@ -17,6 +17,8 @@ function agregarAmigo() {
     }
 
     limpiarCampoNombre ('amigo', 'Escribe un nombre');
+
+    return;
 }
 
 function limpiarCampoNombre(elemento, texto) {
