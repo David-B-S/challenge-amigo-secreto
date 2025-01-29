@@ -16,4 +16,13 @@ function agregarAmigo() {
 
     }
 
+    limpiarCampoNombre ('amigo', 'Escribe un nombre');
+}
+
+function limpiarCampoNombre(elemento, texto) {
+    let elementoHTML = document.getElementById(elemento);
+    elementoHTML.innerHTML = texto;
+    return;
+    
+
 }
