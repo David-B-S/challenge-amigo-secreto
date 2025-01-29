@@ -4,6 +4,16 @@ let listaAmigos = [];
 
 function agregarAmigo() {
     
-    listaAmigos.push();
-    
+    let nombreAmigo = document.getElementById('amigo');
+
+    if ( nombreAmigo === " "){
+
+        alert ("Por favor, inserte un nombre.");
+
+    } else {
+
+        listaAmigos.push(nombreAmigo);
+
+    }
+
 }
