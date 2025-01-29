@@ -4,27 +4,27 @@ let listaAmigos = [];
 
 function agregarAmigo() {
     
-    let nombreAmigo = document.getElementById('amigo');
+    let nombreAmigo = document.querySelector('#amigo').value;
 
-    if ( nombreAmigo === " "){
+    if ( nombreAmigo === ""){
 
         alert ("Por favor, inserte un nombre.");
 
     } else {
 
         listaAmigos.push(nombreAmigo);
-
+        console.log(listaAmigos);
+        limpiarCampoNombre ('#amigo', '');
+        
     }
-
-    limpiarCampoNombre ('amigo', 'Escribe un nombre');
+    
 
     return;
 }
 
 function limpiarCampoNombre(elemento, texto) {
-    let elementoHTML = document.getElementById(elemento);
-    elementoHTML.innerHTML = texto;
+
+    document.querySelector(elemento).value = texto;
     return;
-    
 
 }
