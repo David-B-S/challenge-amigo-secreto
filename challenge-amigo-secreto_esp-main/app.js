@@ -2,3 +2,8 @@
 
 let listaAmigos = [];
 
+function agregarAmigo() {
+    
+    listaAmigos.push();
+    
+}
